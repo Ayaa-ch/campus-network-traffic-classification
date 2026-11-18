@@ -1,0 +1,17 @@
+# Données et artefacts (régénérés par les notebooks)
+data/
+artifacts/
+
+# Rapport Word/PDF
+reports/
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+
+# Fichiers temporaires Word
+~$*
