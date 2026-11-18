@@ -94,17 +94,3 @@ Puis exécuter les notebooks dans l'ordre :
 Les Fuzzers restent la famille la plus difficile à détecter (rappel 0,767 pour
 XGBoost), tandis que Generic, DoS et Reconnaissance sont quasiment parfaits.
 
-## Limites
-
-- Découpage aléatoire uniquement : pas de validation temporelle, donc pas de mesure
-  de dérive.
-- 4 247 lignes du test (5,2 %) existent aussi dans le train ; les résultats sans ces
-  lignes baissent de 0,0035 de F1 pour XGBoost.
-- Probabilités non calibrées (le rééquilibrage des classes les décale).
-- Classification binaire seulement ; la version multi-classe des familles d'attaques
-  reste à faire.
-
-## Rapport
-
-Le rapport détaillé (Word/PDF, parties EDA, prétraitement et modélisation) n'est pas
-versionné dans ce dépôt.
